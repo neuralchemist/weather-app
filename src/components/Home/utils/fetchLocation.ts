@@ -32,7 +32,7 @@ async function getLocation(): Promise<string> {
 export async function fetchLocation() {
   // search location data in local storage
   let location: string | null = localStorage.getItem("wapp-location");
-  console.log("fetchLocation -> localStorage -> location ", location);
+  // console.log("fetchLocation -> localStorage -> location ", location);
 
   if (location) {
     console.log("%clocation from local storage", "color: red");
