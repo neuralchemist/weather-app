@@ -7,7 +7,8 @@ export default defineConfig({
     },
     baseUrl: "http://localhost:3000",
     watchForFileChanges: false,
-    defaultCommandTimeout: 4000,
+    defaultCommandTimeout: 8000,
     video: false,
+    chromeWebSecurity: false,
   },
 });
