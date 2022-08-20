@@ -10,18 +10,18 @@ describe("E2E Testing weather app", () => {
     cy.clearLocalStorage("wapp-weather");
   });
 
-  it("fetch weather successfull", () => {
-    cy.get("h2").should("have.text", "Predicting The Future");
-    cy.get(".MuiGrid-container > .MuiGrid-item").should("have.length", 7);
-  });
+  // it("fetch weather successfull", () => {
+  //   cy.get("h2").should("have.text", "Predicting The Future");
+  //   cy.get(".MuiGrid-container > .MuiGrid-item").should("have.length", 7);
+  // });
 
-  it("fetch weather unsuccessfull", () => {
-    cy.intercept("https://api.tomorrow.io/v4/**", {
-      statusCode: 501,
-    }).as("weather");
-    cy.visit("/");
-    cy.get(".MuiAlert-message").should("contain", "Request failed");
-  });
+  // it("fetch weather unsuccessfull", () => {
+  //   cy.intercept("https://api.tomorrow.io/v4/**", {
+  //     statusCode: 501,
+  //   }).as("weather");
+  //   cy.visit("/");
+  //   cy.get(".MuiAlert-message").should("contain", "Request failed");
+  // });
 
   it("should show alert error if navigator.geolocation.getCurrentPosition fails", () => {
     cy.stubGeolocation();
