@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 // dayjs
 import dayjs from "dayjs";
-// mui
-import Typography from "@mui/material/Typography";
 // custom hooks
 import useFetchWeather from "./hooks/useFetchWeather";
 // custom component
@@ -11,8 +9,6 @@ import Error from "../Error";
 import WeatherList from "./WeatherList";
 import WeatherToday from "./WeatherToday";
 import { StyledHome, StyledTitle } from "./styledComponents";
-// custom types
-import { WeatherType } from "./types/weather.types";
 
 function Home() {
   const { weatherData, status, error } = useFetchWeather();
