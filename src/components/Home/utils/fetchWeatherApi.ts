@@ -22,8 +22,8 @@ export async function fetchWeatherApi(location: string) {
   console.log("%cFetching weather data from api", "color: green");
   const url = `${URL}?location=${location}&${FIELDS}&${OTHERS}&apikey=${APIKEY}`;
   const { data } = await axios.get(url);
-  console.log("%cweather api data:", "color: blue");
-  console.log(data);
+  // console.log("%cweather api data:", "color: blue");
+  // console.log(data);
   const weather = data.data.timelines[0].intervals.slice(0, 7);
   // store weather in local storage
   localStorage.setItem("wapp-weather", JSON.stringify(weather));
