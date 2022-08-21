@@ -44,8 +44,8 @@ function useFetchWeather() {
         }
 
         // ---DEBUGGING---
-        console.log("%cWeather Data 7 Days", "color: green");
-        console.log(weather);
+        // console.log("%cWeather Data 7 Days", "color: green");
+        // console.log(weather);
       } catch (err) {
         // set status and error
         setStatus("error");
