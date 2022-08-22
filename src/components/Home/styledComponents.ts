@@ -42,6 +42,12 @@ export const StyledCard = styled(Card)(({ theme }: Props) => ({
   flexDirection: "row",
   justifyContent: "space-around",
   alignItems: "center",
+  transition: "border 0.5s, box-shadow 0.5s",
+
+  "&:hover": {
+    border: "1px solid rgba(0, 0, 0, 0.5)",
+    boxShadow: "0 4px 20px rgba(255, 255, 255, 0.5)",
+  },
 
   [theme.breakpoints.up("sm")]: {
     flexDirection: "column",
@@ -82,11 +88,16 @@ export const StyledTodayCard = styled(Card)(({ theme }: Props) => ({
   width: "95%",
   minHeight: "100px",
   marginBottom: theme.spacing(8),
+  transition: "border 0.5s, box-shadow 0.5s",
+
+  "&:hover": {
+    border: "1px solid rgba(255, 255, 255, 0.5)",
+    boxShadow: "0 4px 20px rgba(255, 255, 255, 0.5)",
+  },
 
   [theme.breakpoints.up("sm")]: {
     justifyContent: "space-around",
     alignItems: "center",
-    // width: "100%",
   },
 }));
 

@@ -1,8 +1,13 @@
 import { ReactComponent as SVG } from "./partly-cloudy.svg";
-import styles from "./style.module.css";
+// custom components
+import { StyledIcon } from "./styledComponents";
 
 function PartlyCloudyIcon() {
-  return <SVG className={styles.icon} />;
+  return (
+    <StyledIcon>
+      <SVG />
+    </StyledIcon>
+  );
 }
 
 export default PartlyCloudyIcon;

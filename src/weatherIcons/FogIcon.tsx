@@ -1,7 +1,12 @@
 import { ReactComponent as SVG } from "./fog.svg";
-import styles from "./style.module.css";
+// custom components
+import { StyledIcon } from "./styledComponents";
 
 function FogIcon() {
-  return <SVG className={styles.icon} />;
+  return (
+    <StyledIcon>
+      <SVG />
+    </StyledIcon>
+  );
 }
 export default FogIcon;
