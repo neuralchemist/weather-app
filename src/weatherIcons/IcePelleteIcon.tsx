@@ -1,8 +1,13 @@
 import { ReactComponent as SVG } from "./ice-pellete.svg";
-import styles from "./style.module.css";
+// custom components
+import { StyledIcon } from "./styledComponents";
 
 function IcePelleteIcon() {
-  return <SVG className={styles.icon} />;
+  return (
+    <StyledIcon>
+      <SVG />
+    </StyledIcon>
+  );
 }
 
 export default IcePelleteIcon;

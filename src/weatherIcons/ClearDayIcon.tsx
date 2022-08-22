@@ -1,8 +1,13 @@
 import { ReactComponent as SVG } from "./clear-day.svg";
-import styles from "./style.module.css";
+// custom components
+import { StyledIcon } from "./styledComponents";
 
 function ClearDayIcon() {
-  return <SVG className={styles.icon} />;
+  return (
+    <StyledIcon>
+      <SVG />
+    </StyledIcon>
+  );
 }
 
 export default ClearDayIcon;

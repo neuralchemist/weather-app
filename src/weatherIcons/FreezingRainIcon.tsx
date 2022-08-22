@@ -1,7 +1,12 @@
 import { ReactComponent as SVG } from "./freezing-rain.svg";
-import styles from "./style.module.css";
+// custom components
+import { StyledIcon } from "./styledComponents";
 
 function FreezingRainIcon() {
-  return <SVG className={styles.icon} />;
+  return (
+    <StyledIcon>
+      <SVG />
+    </StyledIcon>
+  );
 }
 export default FreezingRainIcon;

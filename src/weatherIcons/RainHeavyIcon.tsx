@@ -1,8 +1,13 @@
 import { ReactComponent as SVG } from "./rain-heavy.svg";
-import styles from "./style.module.css";
+// custom components
+import { StyledIcon } from "./styledComponents";
 
 function RainHeavyIcon() {
-  return <SVG className={styles.icon} />;
+  return (
+    <StyledIcon>
+      <SVG />
+    </StyledIcon>
+  );
 }
 
 export default RainHeavyIcon;
