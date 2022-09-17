@@ -20,7 +20,7 @@
 - fully responsive with support for mobile, tablet and desktop device to increase traffic.
 - product cart with animation to increase user interaction and retention.
 - used SVG icons, which are lightweight and scalable that looks great on high-density displays. 
-- use geolocation to access current location from browser with users permission.
+- used geolocation to access current location from browser with users permission.
 - cached in localstorage to reduce network traffic.
 - refrain from fetching data if cached data is less than 3 days old to optimize performance and minimize HTTP requests.
 - react useEffect hook and axios to consume external APIs.
@@ -35,6 +35,7 @@
 - typescript
 - Material UI
 - localstorage
+- geolocation
 - Axios
 - cypress
 - firebase
