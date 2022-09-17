@@ -24,7 +24,7 @@
 - cached in localstorage to reduce network traffic.
 - refrain from fetching data if cached data is less than 3 days old to optimize performance and minimize HTTP requests.
 - react useEffect hook and axios to consume external APIs.
-- end-end-tested with cypress.
+- end-to-end-tested with cypress.
 - documented for code maintainability.
 - fully automated CI / CD pipeline implemented with github and github actions.
 - deployed and hosted in firebase.
@@ -32,25 +32,25 @@
 ### Stack
 
 - React
-- typescript
+- Typescript
 - Material UI
-- localstorage
-- geolocation
+- Localstorage
+- Geolocation
 - Axios
-- cypress
-- firebase
-- github
-- github actions
+- Cypress
+- Firebase
+- Github
+- Github actions
 
 ## Screenshots
 
 - Landing Page (desktop view)
 
-<img src="screenshots/landing-desktop.png" width="400" height="500">
+<img src="screenshots/landing-desktop.png" width="600" height="500">
 
 - Landing Page (tablet view)
 
-<img src="screenshots/landing-tablet.png" width="400" height="500">
+<img src="screenshots/landing-tablet.png" width="600" height="700">
 
 - Landing Page (mobile view)
 
