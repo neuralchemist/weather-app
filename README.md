@@ -65,7 +65,7 @@ Below you'll find the instructions for setting up the project locally
 
 ```bash
 # Clone the repo
-gh repo clone neuralchemist/weather-app
+git clone https://github.com/neuralchemist/weather-app.git
 
 # Install dependencies
 cd weather-app
