@@ -11,7 +11,7 @@
 
 ## About
 
-**Weather App** is a mobile friendly website showing the weather forcast for next seven days.
+**Weather App** is a mobile friendly website showing the weather forecast for next seven days.
 
 ## Features and Stack
 
